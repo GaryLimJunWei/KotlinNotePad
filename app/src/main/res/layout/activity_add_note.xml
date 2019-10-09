@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddNoteActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="3dp"
+            app:cardElevation="3dp"
+            android:layout_margin="5dp"
+            app:cardBackgroundColor="@color/colorPrimary">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/titleEdit"
+                    android:background="@drawable/common_google_signin_btn_icon_light_normal_background"
+                    android:singleLine="true"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:hint="Enter Title"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/bodyEdit"
+                    android:background="@color/cardview_light_background"
+                    android:gravity="top"
+                    android:hint="Enter description"
+                    android:minHeight="100dp"
+                    android:padding="10dp"/>
+
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/addBtn"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_marginEnd="5dp"
+            android:text="Add"
+            android:layout_gravity="end"/>
+
+    </LinearLayout>
+
+
+
+</ScrollView>

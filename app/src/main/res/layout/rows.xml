@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="3dp"
+    app:cardCornerRadius="3dp"
+    app:cardBackgroundColor="@color/cardview_light_background"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="end|bottom"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/titleTv"
+            android:text="Title"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="There may be a very long description " />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimaryDark"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="3dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:id="@+id/editBtn"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/ic_action_edit"
+                android:background="@null"
+                android:layout_height="wrap_content"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:id="@+id/deleteBtn"
+                android:src="@drawable/ic_action_delete"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@null"
+                android:layout_height="wrap_content"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:id="@+id/copyBtn"
+                android:src="@drawable/ic_action_copy"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@null"
+                android:layout_height="wrap_content"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:id="@+id/shareBtn"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/ic_action_share"
+                android:background="@null"
+                android:layout_height="wrap_content"/>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
